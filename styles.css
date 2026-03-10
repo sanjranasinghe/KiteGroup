@@ -156,6 +156,7 @@ button {
 
 .hero-card,
 .service-card,
+.client-card,
 .testimonial-panel,
 .process-card,
 .quote-form,
@@ -280,11 +281,27 @@ button {
   margin-top: 1.6rem;
 }
 
+.clients-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+  margin-top: 1.6rem;
+}
+
 .service-card {
   padding: 1.4rem;
 }
 
+.client-card {
+  padding: 1.4rem;
+  border: 1px solid var(--line);
+  border-radius: var(--radius-lg);
+  background: rgba(255, 255, 255, 0.72);
+  box-shadow: var(--shadow);
+}
+
 .service-card h3,
+.client-card h3,
 .feature-list h3 {
   margin: 0 0 0.4rem;
   font-size: 1.25rem;
@@ -443,7 +460,8 @@ button {
   .feature-layout,
   .areas-layout,
   .quote-form,
-  .card-grid {
+  .card-grid,
+  .clients-grid {
     grid-template-columns: 1fr;
   }
 
